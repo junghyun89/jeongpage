@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEONG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <a href="#">JEONG</a>
+        </div>
+        <ul class="navbar__menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Weddings</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Bookings</a></li>
+        </ul>
+        <ul class="navbar__icons">
+            <a href="https://www.notion.so/ac26ffbf2b4e45b5b0f497bdd72fcf0d?v=fe19d86190454df783aba6ae9c981be5"
+                target="_blank">
+                <li><i class="fa-solid fa-face-laugh-wink"></i></li>
+            </a>
+            <a href="https://hermes.voithrucorp.com/ko/dashboard" target="_blank">
+                <li><i class="fa-solid fa-closed-captioning"></i></li>
+            </a>
+        </ul>
+        <a href="#" class="navbar__toggleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+    <div class="container">
+        <div class="bodybox" id="titlebox">
+            <h1 id="title">! YOU CAN DO IT !</h1>
+        </div>
+        <div class="bodybox" id="gridbox_1">
+            <iframe src="https://www.youtube.com/embed/HpwMfZPpo_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="buttons">
+                <a href="https://academy.dream-coding.com/courses/take/mini-shopping/lessons/14774844-introduction"
+            target="_blank">
+                    <div class="button">mini game</div>
+                </a>
+                <a href="https://www.inflearn.com/my-courses" target="_blank">
+                    <div class="button">inflearn</div>
+                </a>
+                <a href="https://github.com/junghyun89" target="_blank">
+                    <div class="button">github</div>
+                </a>
+                <a href="https://nomadcoders.co/javascript-for-beginners/lectures/2899" target="_blank">
+                    <div class="button">make my app</div>
+                </a>
+            </div>
+        </div>   
+        <div class="bodybox" id="calculator">
+            <form id="forms" name="forms">
+                <input type="text" name="output" value="96848">
+                <input type="button" class="operator" value="*" onclick="document.forms.output.value+='*'">
+                <input type="button" class="operator" value="/" onclick="document.forms.output.value+='/'">
+                <input type="button" class="clear" value="C" onclick="document.forms.output.value=''">
+                <input type="button" class="operator" value="-" onclick="document.forms.output.value+='-'">
+                <input type="button" class="dot" value="." onclick="document.forms.output.value+='.'">
+                <input type="button" class="operator" value="+" onclick="document.forms.output.value+='+'">
+                <input type="button" class="result" value="=">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
